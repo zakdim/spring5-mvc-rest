@@ -1,3 +1,5 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/zakdim/spring5-mvc-rest/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/zakdim/spring5-mvc-rest/tree/master)
+
 # RESTFul WebService with Spring MVC
 
 An example application for `Section 24: RESTFul WebService with Spring MVC` of the Udemy course:
