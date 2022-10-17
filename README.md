@@ -11,3 +11,14 @@ An example application for `Section 24: RESTFul WebService with Spring MVC` of t
 
 * [Fruit Shop API Example](https://api.predic8.de/shop/docs)
 
+### Lecture 381: Testing with Postman
+
+* Access H2 console: http://localhost:8080/h2-console
+
+* Examples of API URLs to test in Postman:
+
+```
+http://localhost:8080/api/v1/categories/
+http://localhost:8080/api/v1/categories/Fresh
+```
+
