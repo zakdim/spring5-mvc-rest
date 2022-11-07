@@ -22,3 +22,6 @@ http://localhost:8080/api/v1/categories/
 http://localhost:8080/api/v1/categories/Fresh
 ```
 
+### Lecture 383: Assignment Review
+
+* Generate Java POJOs from JSON : [jsonschema2pojo](https://www.jsonschema2pojo.org/)
