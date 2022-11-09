@@ -121,7 +121,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/customers/2",
+							"raw": "http://localhost:8080/api/v1/customers/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -131,7 +131,7 @@
 								"api",
 								"v1",
 								"customers",
-								"2"
+								""
 							]
 						}
 					},
@@ -162,6 +162,37 @@
 								"api",
 								"v1",
 								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "s24-385-updateCustomer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"Freddy\",\n  \"lastName\": \"Meyers\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/customers/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"1"
 							]
 						}
 					},
