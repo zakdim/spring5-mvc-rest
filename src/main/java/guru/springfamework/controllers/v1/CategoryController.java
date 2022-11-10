@@ -2,7 +2,6 @@ package guru.springfamework.controllers.v1;
 
 import guru.springfamework.api.v1.model.CategoryDTO;
 import guru.springfamework.api.v1.model.CategoryListDTO;
-import guru.springfamework.domain.Category;
 import guru.springfamework.services.CategoryService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,8 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Create by dmitri on 2022-10-16.
  */
 @Controller
-@RequestMapping("/api/v1/categories/")
+@RequestMapping(CategoryController.BASE_URL)
+//@RequestMapping("${controller.category.baseurl}")
 public class CategoryController {
+
+    public static final String BASE_URL = "/api/v1/categories";
 
     private final CategoryService categoryService;
 
@@ -27,14 +29,14 @@ public class CategoryController {
     @GetMapping
     public ResponseEntity<CategoryListDTO> getAllCategories() {
 
-        return new ResponseEntity<CategoryListDTO>(
+        return new ResponseEntity<>(
                 new CategoryListDTO(categoryService.getAllCategories()), HttpStatus.OK);
     }
 
     @GetMapping("{name}")
     public ResponseEntity<CategoryDTO> getCategoryByName(@PathVariable String name) {
 
-        return new ResponseEntity<CategoryDTO>(
+        return new ResponseEntity<>(
                 categoryService.getCategoryByName(name), HttpStatus.OK
         );
     }
