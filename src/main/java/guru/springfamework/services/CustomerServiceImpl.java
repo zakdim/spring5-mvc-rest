@@ -46,7 +46,7 @@ public class CustomerServiceImpl implements CustomerService {
                     customerDTO.setCustomerUrl(getCustomerUrl(id));
                     return customerDTO;
                 })
-                .orElseThrow(RuntimeException::new); // TODO implement better exception handling
+                .orElseThrow(ResourceNotFoundException::new);
     }
 
     @Override
@@ -90,7 +90,7 @@ public class CustomerServiceImpl implements CustomerService {
 
             return returnDTO;
 
-        }).orElseThrow(RuntimeException::new); //TODO implement better exception handling;
+        }).orElseThrow(ResourceNotFoundException::new);
     }
 
     private String getCustomerUrl(Long id) {
