@@ -25,3 +25,46 @@ http://localhost:8080/api/v1/categories/Fresh
 ### Lecture 383: Assignment Review
 
 * Generate Java POJOs from JSON : [jsonschema2pojo](https://www.jsonschema2pojo.org/)
+
+## Section 25: Using Swagger with Spring Boot
+
+### Lecture 395: Introduction to Swagger
+
+[Swagger API Development](https://swagger.io/)
+
+### Lecture 397: Configuring Swagger
+
+* Swagger 2
+
+1. pom.xml :
+
+```xml
+    <properties>
+        <!-- ... -->
+        <springfox-swagger.version>3.0.0</springfox-swagger.version>
+    </properties>
+    <!-- ... -->
+       <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox-swagger.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox-swagger.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>${springfox-swagger.version}</version>
+        </dependency>
+```
+
+2. application.properties :
+
+`spring.mvc.pathmatch.matching-strategy=ant_path_matcher`
+
+3. Access data at `http://localhost:8080/swagger-ui/index.html`
