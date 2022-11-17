@@ -2,6 +2,7 @@ package guru.springfamework.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
@@ -13,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @EnableSwagger2
 @Configuration
-public class SwaggerConfig {
+public class SwaggerConfig { //extends WebMvcConfigurationSupport { // when configuring swagger without spring boot
 
     @Bean
     public Docket api() {
@@ -25,4 +26,15 @@ public class SwaggerConfig {
                 .pathMapping("/");
 
     }
+
+    // To configure swagger without spring boot add this
+    // (see: https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)
+//    @Override
+//    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
+//        registry.addResourceHandler("swagger-ui.html")
+//                .addResourceLocations("classpath:/META-INF/resources/");
+//
+//        registry.addResourceHandler("/webjars/**")
+//                .addResourceLocations("classpath:/META-INF/resources/webjars/");
+//    }
 }

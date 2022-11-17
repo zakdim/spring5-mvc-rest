@@ -65,6 +65,14 @@ http://localhost:8080/api/v1/categories/Fresh
 
 2. application.properties :
 
-`spring.mvc.pathmatch.matching-strategy=ant_path_matcher`
+```properties
+spring.mvc.pathmatch.matching-strategy=ant_path_matcher
+springfox.documentation.swagger.v2.enabled=true
 
-3. Access data at `http://localhost:8080/swagger-ui/index.html`
+```
+
+3. Access data :
+
+JSON: http://localhost:8080/v2/api-docs
+
+Swagger UI: http://localhost:8080/swagger-ui/index.html
