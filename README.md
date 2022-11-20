@@ -76,3 +76,7 @@ springfox.documentation.swagger.v2.enabled=true
 JSON: http://localhost:8080/v2/api-docs
 
 Swagger UI: http://localhost:8080/swagger-ui/index.html
+
+### Lecture 403: Introduction to Swagger Editor
+
+[Swagger Editor](https://swagger.io/tools/swagger-editor/)
