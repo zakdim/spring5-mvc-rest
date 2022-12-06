@@ -80,3 +80,8 @@ Swagger UI: http://localhost:8080/swagger-ui/index.html
 ### Lecture 403: Introduction to Swagger Editor
 
 [Swagger Editor](https://swagger.io/tools/swagger-editor/)
+
+## Section 27: Spring MVC Content Negotiation
+
+### Lecture 427: Maven Dependencies to Render XML with Spring MVC
+
