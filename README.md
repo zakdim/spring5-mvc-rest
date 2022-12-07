@@ -87,3 +87,7 @@ Swagger UI: http://localhost:8080/swagger-ui/index.html
 
 [XSD/XML Schema Generator](https://freeformatter.com/xsd-generator.html)
 
+### Lecture 430: Using JAXB to Generate Java Classes
+
+[JAXB > Basic Examples - Java Generation](https://www.mojohaus.org/jaxb2-maven-plugin/Documentation/v2.4/example_xjc_basic.html)
+
