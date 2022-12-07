@@ -83,5 +83,7 @@ Swagger UI: http://localhost:8080/swagger-ui/index.html
 
 ## Section 27: Spring MVC Content Negotiation
 
-### Lecture 427: Maven Dependencies to Render XML with Spring MVC
+### Lecture 428: Introduction to XML Schema
+
+[XSD/XML Schema Generator](https://freeformatter.com/xsd-generator.html)
 
